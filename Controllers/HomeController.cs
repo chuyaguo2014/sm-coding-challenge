@@ -26,7 +26,13 @@ namespace sm_coding_challenge.Controllers
         [HttpGet]
         public IActionResult Player(string id)
         {
-            return Json(_dataProvider.GetPlayerById(id));
+            Task<PlayerModel> task = _dataProvider.GetPlayerById(id);
+            Console.WriteLine("we created the task... now start waiting");
+            task.Wait();
+            var result = task.Result;
+            Console.WriteLine("here is my result: " + result);
+
+            return Json(result);
         }
 
         [HttpGet]
@@ -36,7 +42,7 @@ namespace sm_coding_challenge.Controllers
             var returnList = new List<PlayerModel>();
             foreach (var id in idList)
             {
-                returnList.Add(_dataProvider.GetPlayerById(id));
+                returnList.Add(_dataProvider.GetPlayerById_old(id));
             }
             return Json(returnList);
         }

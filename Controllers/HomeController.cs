@@ -26,25 +26,21 @@ namespace sm_coding_challenge.Controllers
         [HttpGet]
         public IActionResult Player(string id)
         {
-            Task<PlayerModel> task = _dataProvider.GetPlayerById(id);
-            Console.WriteLine("we created the task... now start waiting");
+
+            Task<List<PlayerModel>> task = _dataProvider.GetPlayersByIds(id);
             task.Wait();
             var result = task.Result;
-            Console.WriteLine("here is my result: " + result);
-
             return Json(result);
         }
 
         [HttpGet]
-        public IActionResult Players(string ids)
+        public IActionResult Players(string ids, string id = "")
         {
-            var idList = ids.Split(',');
-            var returnList = new List<PlayerModel>();
-            foreach (var id in idList)
-            {
-                returnList.Add(_dataProvider.GetPlayerById_old(id));
-            }
-            return Json(returnList);
+            var actualIds = String.IsNullOrEmpty(ids) ? id : ids;
+            Task<List<PlayerModel>> task = _dataProvider.GetPlayersByIds(actualIds);
+            task.Wait();
+            var result = task.Result;
+            return Json(result);
         }
 
         [HttpGet]

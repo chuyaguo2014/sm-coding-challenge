@@ -4,85 +4,78 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
 using sm_coding_challenge.Models;
+using System.Collections.Generic;
+using System.Linq;
+
 
 namespace sm_coding_challenge.Services.DataProvider
 {
     public class DataProviderImpl : IDataProvider
     {
         public static TimeSpan Timeout = TimeSpan.FromSeconds(30);
-
-        public PlayerModel GetPlayerById_old(string id)
+        public async Task<List<PlayerModel>> GetPlayersByIds(string ids)
         {
-            var handler = new HttpClientHandler()
+            if (!String.IsNullOrEmpty(ids))
             {
-                AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
-            };
-            using (var client = new HttpClient(handler))
-            {
-                client.Timeout = Timeout;
-                var response = client.GetAsync("https://gist.githubusercontent.com/RichardD012/a81e0d1730555bc0d8856d1be980c803/raw/3fe73fafadf7e5b699f056e55396282ff45a124b/basic.json").Result;
-                var stringData = response.Content.ReadAsStringAsync().Result;
-                var dataResponse = JsonConvert.DeserializeObject<DataResponseModel>(stringData, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
-                return getPlaygerFromResponse(id, dataResponse);
-            }
-            return null;
-        }
-        public async Task<PlayerModel>  GetPlayerById(string id){
-            var handler = new HttpClientHandler()
-            {
-                AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
-            };
-            using (var client = new HttpClient(handler))
-            {
-                Console.WriteLine("\n\n\n We are now in the async method...");
-                client.Timeout = Timeout;
-                var response = await client.GetAsync("https://gist.githubusercontent.com/RichardD012/a81e0d1730555bc0d8856d1be980c803/raw/3fe73fafadf7e5b699f056e55396282ff45a124b/basic.json");
-                var content = await response.Content.ReadAsStringAsync();
+                var handler = new HttpClientHandler()
+                {
+                    AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+                };
 
-                var dataResponse = JsonConvert.DeserializeObject<DataResponseModel>(content, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
-                return getPlaygerFromResponse(id, dataResponse);
+                var idList = ids.Split(',');
+                using (var client = new HttpClient(handler))
+                {
+                    client.Timeout = Timeout;
+                    var response = await client.GetAsync("https://gist.githubusercontent.com/RichardD012/a81e0d1730555bc0d8856d1be980c803/raw/3fe73fafadf7e5b699f056e55396282ff45a124b/basic.json");
+                    var content = await response.Content.ReadAsStringAsync();
+                    var dataResponse = JsonConvert.DeserializeObject<DataResponseModel>(content, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
+                    return getPlayersFromResponse(idList, dataResponse);
+                }
             }
-            return null;
+            return new List<PlayerModel>();
+
         }
-    
-        private PlayerModel getPlaygerFromResponse(string id, DataResponseModel dataResponse){
-            foreach(var player in dataResponse.Rushing)
-                {
-                    if(player.Id.Equals(id))
-                    {
-                        Console.Write("player id {0}\n", id);
-                        return player;
-                    }
-                }
-            foreach(var player in dataResponse.Passing)
+
+        private List<PlayerModel> getPlayersFromResponse(String[] idArray, DataResponseModel dataResponse)
+        {
+            var returnList = new List<PlayerModel>();
+            foreach (var player in dataResponse.Rushing)
             {
-                if(player.Id.Equals(id))
+                Console.WriteLine("this is our player right now: {0}", player);
+                if (idArray.Contains(player.Id))
                 {
-                    return player;
+                    returnList.Add(player);
                 }
             }
-            foreach(var player in dataResponse.Receiving)
+            foreach (var player in dataResponse.Passing)
             {
-                if(player.Id.Equals(id))
+                if (idArray.Contains(player.Id))
                 {
-                    return player;
+                    returnList.Add(player);
                 }
             }
-            foreach(var player in dataResponse.Receiving)
+            foreach (var player in dataResponse.Receiving)
             {
-                if(player.Id.Equals(id))
+                if (idArray.Contains(player.Id))
                 {
-                    return player;
+                    returnList.Add(player);
                 }
             }
-            foreach(var player in dataResponse.Kicking)
+            foreach (var player in dataResponse.Receiving)
+            {
+                if (idArray.Contains(player.Id))
                 {
-                    if(player.Id.Equals(id))
-                    {
-                        return player;
-                    }
+                    returnList.Add(player);
                 }
-            return null;
+            }
+            foreach (var player in dataResponse.Kicking)
+            {
+                if (idArray.Contains(player.Id))
+                {
+                    returnList.Add(player);
+                }
+            }
+            return returnList;
         }
     }
 }

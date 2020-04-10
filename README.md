@@ -36,17 +36,42 @@ Currently this project has an 'IDataProvider' interface that has a a single meth
 
 ### Considerations in Design
 
-* What would happen if the remote endpoint goes down?  What are some ways to mitigate this that are transparent to the user?
+* _What would happen if the remote endpoint goes down?  What are some ways to mitigate this that are transparent to the user?_
+
   * The app would break/throw errors as of right now but we can consider things like: 
     * caching the external api response (in memory or in redis depending on the size of the response)
-    * have our app fetch from cache first and 
-* What are some ways to prevent multiple calls to the data endpoint?
-  * again, we can cache the response (for example, at app startup, call the external api once) 
+    * have our app fetch from cache first and fall back on talking to the actual external api if the cache expires
+* _What are some ways to prevent multiple calls to the data endpoint?_
+
+  * again, we can cache the external response (for example, at app startup, call the external api once) 
   * or save to a DB/S3 bucket and have another background/scheduled task/lambda that calls the external api every few hours/days to update the data if necessary. But our app will talk to the DB/S3 only. 
-* This data set is not updated very frequently (once a week), what are some ways we could take advantage of this in our system?
+  * we can also cache the incoming requests and their respective responses (from our app)! If someone repeatedly asks us the same question, we can just return the cached response instead of processing the request all over again from the beginning
+
+* _This data set is not updated very frequently (once a week), what are some ways we could take advantage of this in our system?_
+
   * We can have our own scheduled tasks to call the api; 
   * or, if the external api has webhooks/events we can subscribe to, then we can write a aws lambda function that triggers when the data in the external is updated, and then we will go fetch it (so not on a schedule, just only when necessary)
 
 ## Notes
 
 There is no limit to what is acceptable as far as libraries, changes, and methodologies goes.  Feel free to add/remove/change methods, abstractions, etc. to facilitate your needs.  Feel free to comment on areas that are dubious or may present challenges in a real-world environment.
+  * _Chuya's comments:_
+    * About the code itself:
+      * We can probably do some more validation on the inputs (both the `ids` and the external api responses)
+
+      * We can also consider implementing some retries if the external api request fails from time to time due to transient network errors. 
+
+    * About Testing:
+      * We should write some unit tests for this! Mock the external api responses but test the methods in `DataProviderImpl.cs` 
+
+      * More end-to-end tests/synthetics (where we actually make the external api call) too! 
+
+      * We should also consider bench-marking/stress-testing our app
+
+    * Real world considerations:
+
+      * We should also have more logging, error-handling, and monitoring around the app. Self-recovery is also a nice-to-have - for example, when the CPU usage/number of requests is above a certain threshold, automatically spin up additional machines to support the incoming traffic. 
+
+      * We should be vigilant and watch for repeated offenders - maybe throttle requests from certain IPs if they are too chatty. 
+        * If we lock this api behind some sort of api gateway that requires login credentials/client keys we can identify more easily malicious/unnecessary requests and reduce them.
+        * This will also make it easy for other services to integrate with us

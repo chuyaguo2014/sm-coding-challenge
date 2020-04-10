@@ -13,6 +13,12 @@ namespace sm_coding_challenge.Services.DataProvider
     public class DataProviderImpl : IDataProvider
     {
         public static TimeSpan Timeout = TimeSpan.FromSeconds(30);
+
+        /// <summary>
+        /// Returns a distinct list of players from the api based on the given ids
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
         public async Task<List<PlayerModel>> GetPlayersByIds(string ids)
         {
             if (!String.IsNullOrEmpty(ids))
@@ -36,6 +42,12 @@ namespace sm_coding_challenge.Services.DataProvider
 
         }
 
+        /// <summary>
+        /// Search dataResponse (containing all the players) for those with the given ids
+        /// </summary>
+        /// <param name="idArray"></param>
+        /// <param name="dataResponse"></param>
+        /// <returns></returns>
         private List<PlayerModel> getPlayersFromResponse(String[] idArray, DataResponseModel dataResponse)
         {
             var distinctIdArray = idArray.Distinct().ToArray();
@@ -54,6 +66,12 @@ namespace sm_coding_challenge.Services.DataProvider
             return returnList;
         }
 
+        /// <summary>
+        /// Based on the given dataResponse, generate a dictionary whose keys are player ids and whose values are the actual player instances
+        /// thus all duplicate players are removed
+        /// </summary>
+        /// <param name="dataResponse"></param>
+        /// <returns></returns>
         private Dictionary<String, PlayerModel> getAllPlayersDictionary(DataResponseModel dataResponse)
         {
             var allPlayers = new List<PlayerModel>(dataResponse.Rushing.Count + dataResponse.Passing.Count + dataResponse.Receiving.Count + dataResponse.Kicking.Count);

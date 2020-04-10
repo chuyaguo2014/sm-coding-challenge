@@ -38,44 +38,32 @@ namespace sm_coding_challenge.Services.DataProvider
 
         private List<PlayerModel> getPlayersFromResponse(String[] idArray, DataResponseModel dataResponse)
         {
+            var distinctIdArray = idArray.Distinct().ToArray();
+            Dictionary<String, PlayerModel> playerDictionary = getAllPlayersDictionary(dataResponse);
+
             var returnList = new List<PlayerModel>();
-            foreach (var player in dataResponse.Rushing)
+
+            foreach (string playerId in distinctIdArray)
             {
-                Console.WriteLine("this is our player right now: {0}", player);
-                if (idArray.Contains(player.Id))
+                PlayerModel foundPlayer;
+                if (playerDictionary.TryGetValue(playerId, out foundPlayer))
                 {
-                    returnList.Add(player);
-                }
-            }
-            foreach (var player in dataResponse.Passing)
-            {
-                if (idArray.Contains(player.Id))
-                {
-                    returnList.Add(player);
-                }
-            }
-            foreach (var player in dataResponse.Receiving)
-            {
-                if (idArray.Contains(player.Id))
-                {
-                    returnList.Add(player);
-                }
-            }
-            foreach (var player in dataResponse.Receiving)
-            {
-                if (idArray.Contains(player.Id))
-                {
-                    returnList.Add(player);
-                }
-            }
-            foreach (var player in dataResponse.Kicking)
-            {
-                if (idArray.Contains(player.Id))
-                {
-                    returnList.Add(player);
+                    returnList.Add(foundPlayer);
                 }
             }
             return returnList;
+        }
+
+        private Dictionary<String, PlayerModel> getAllPlayersDictionary(DataResponseModel dataResponse)
+        {
+            var allPlayers = new List<PlayerModel>(dataResponse.Rushing.Count + dataResponse.Passing.Count + dataResponse.Receiving.Count + dataResponse.Kicking.Count);
+            allPlayers.AddRange(dataResponse.Rushing);
+            allPlayers.AddRange(dataResponse.Passing);
+            allPlayers.AddRange(dataResponse.Receiving);
+            allPlayers.AddRange(dataResponse.Kicking);
+
+            Dictionary<String, PlayerModel> playerDictionary = allPlayers.GroupBy(p => p.Id, StringComparer.OrdinalIgnoreCase).ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
+            return playerDictionary;
         }
     }
 }

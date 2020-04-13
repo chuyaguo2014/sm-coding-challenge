@@ -19,16 +19,16 @@ namespace sm_coding_challenge.Models
         public string Position { get; set; }
 
         [DataMember(Name = "yds")]
-        public string yds { get; set; }
+        public string yds { get; set; } = "0";
 
         [DataMember(Name = "att")]
-        public string att { get; set; }
+        public string att { get; set; } = "0";
 
         [DataMember(Name = "tds")]
-        public string tds { get; set; }
+        public string tds { get; set; } = "0";
 
         [DataMember(Name = "fum")]
-        public string fum { get; set; }
+        public string fum { get; set; } = "0";
 
     }
 }

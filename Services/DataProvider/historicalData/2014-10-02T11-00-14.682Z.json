@@ -1,0 +1,1056 @@
+{
+  "timestamp": "2014-10-02T11:00:14.682Z",
+  "pollingInterval": "10",
+  "week": "4",
+  "sportName": "Football",
+  "competitionName": "NFL_Reg",
+  "seasonID": "NFL_2014",
+  "rushing": [
+    {
+      "player_id": "8f22eb36-5282-407a-b6f9-f9b62e5f7318",
+      "entry_id": "8f22eb36-5282-407a-b6f9-f9b62e5f73182014REG4ru",
+      "name": "Ahmad Bradshaw",
+      "position": "RB",
+      "yds": "32",
+      "att": "9",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "34cc7f47-9f14-4661-b9af-c9d3b2fc873a",
+      "entry_id": "34cc7f47-9f14-4661-b9af-c9d3b2fc873a2014REG4ru",
+      "name": "Charlie Whitehurst",
+      "position": "QB",
+      "yds": "40",
+      "att": "5",
+      "tds": "0",
+      "fum": "1"
+    },
+    {
+      "player_id": "2fda010a-8c62-4c07-b601-4ba03f57e6af",
+      "entry_id": "2fda010a-8c62-4c07-b601-4ba03f57e6af2014REG4ru",
+      "name": "Alex Smith",
+      "position": "QB",
+      "yds": "8",
+      "att": "4",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "aca06a5e-0e3a-4285-a025-199f8fa0376f",
+      "entry_id": "aca06a5e-0e3a-4285-a025-199f8fa0376f2014REG4ru",
+      "name": "Jamaal Charles",
+      "position": "RB",
+      "yds": "92",
+      "att": "18",
+      "tds": "1",
+      "fum": "0"
+    },
+    {
+      "player_id": "99c4968c-f811-4343-8cba-4bdd2884d734",
+      "entry_id": "99c4968c-f811-4343-8cba-4bdd2884d7342014REG4ru",
+      "name": "Daniel Herron",
+      "position": "RB",
+      "yds": "24",
+      "att": "7",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "020cf3d6-745a-4418-a3dc-7dda7a86d0bf",
+      "entry_id": "020cf3d6-745a-4418-a3dc-7dda7a86d0bf2014REG4ru",
+      "name": "Trent Richardson",
+      "position": "RB",
+      "yds": "47",
+      "att": "20",
+      "tds": "1",
+      "fum": "0"
+    },
+    {
+      "player_id": "b8426cea-f8b9-4061-8d56-e70d1230103e",
+      "entry_id": "b8426cea-f8b9-4061-8d56-e70d1230103e2014REG4ru",
+      "name": "T.Y. Hilton",
+      "position": "WR",
+      "yds": "5",
+      "att": "1",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "e3181493-6a2a-4e95-aa6f-3fc1ddeb7512",
+      "entry_id": "e3181493-6a2a-4e95-aa6f-3fc1ddeb75122014REG4ru",
+      "name": "Andrew Luck",
+      "position": "QB",
+      "yds": "-1",
+      "att": "1",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "7d8eba61-208d-4d91-86cd-704ad05cb7f4",
+      "entry_id": "7d8eba61-208d-4d91-86cd-704ad05cb7f42014REG4ru",
+      "name": "Matt Hasselbeck",
+      "position": "QB",
+      "yds": "-2",
+      "att": "3",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "a686927a-781f-4814-a4ef-a5ab34a09062",
+      "entry_id": "a686927a-781f-4814-a4ef-a5ab34a090622014REG4ru",
+      "name": "Jordan Todman",
+      "position": "RB",
+      "yds": "4",
+      "att": "1",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "b45f0ca8-9f84-4893-86d7-b86bb6a588a7",
+      "entry_id": "b45f0ca8-9f84-4893-86d7-b86bb6a588a72014REG4ru",
+      "name": "Denard Robinson",
+      "position": "WR",
+      "yds": "25",
+      "att": "9",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "06669e1d-f9f7-4774-abc2-6ed2f7e7647f",
+      "entry_id": "06669e1d-f9f7-4774-abc2-6ed2f7e7647f2014REG4ru",
+      "name": "Toby Gerhart",
+      "position": "RB",
+      "yds": "32",
+      "att": "10",
+      "tds": "1",
+      "fum": "1"
+    },
+    {
+      "player_id": "bd10efdf-d8e7-4e23-ab1a-1e42fb65131b",
+      "entry_id": "bd10efdf-d8e7-4e23-ab1a-1e42fb65131b2014REG4ru",
+      "name": "Alfred Morris",
+      "position": "RB",
+      "yds": "63",
+      "att": "12",
+      "tds": "1",
+      "fum": "0"
+    },
+    {
+      "player_id": "3467ae3e-4ddf-450d-8f36-b741ea3a2564",
+      "entry_id": "3467ae3e-4ddf-450d-8f36-b741ea3a25642014REG4ru",
+      "name": "Christian Ponder",
+      "position": "QB",
+      "yds": "1",
+      "att": "1",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "5f512278-4956-476d-b5ca-73ecd58d79c1",
+      "entry_id": "5f512278-4956-476d-b5ca-73ecd58d79c12014REG4ru",
+      "name": "Khiry Robinson",
+      "position": "RB",
+      "yds": "87",
+      "att": "8",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "e2782d05-3e61-4c4f-93a6-70eed054e5ba",
+      "entry_id": "e2782d05-3e61-4c4f-93a6-70eed054e5ba2014REG4ru",
+      "name": "Pierre Thomas",
+      "position": "RB",
+      "yds": "8",
+      "att": "2",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "c8232b55-6617-4dd9-a7cf-cf14cd9a29ab",
+      "entry_id": "c8232b55-6617-4dd9-a7cf-cf14cd9a29ab2014REG4ru",
+      "name": "Nick Foles",
+      "position": "QB",
+      "yds": "1",
+      "att": "1",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "166292fc-629e-4c7b-b7bf-f572ca9eeb43",
+      "entry_id": "166292fc-629e-4c7b-b7bf-f572ca9eeb432014REG4ru",
+      "name": "LeSean McCoy",
+      "position": "RB",
+      "yds": "17",
+      "att": "10",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "15b156b5-30cc-4070-b60a-1c09e62c5a9b",
+      "entry_id": "15b156b5-30cc-4070-b60a-1c09e62c5a9b2014REG4ru",
+      "name": "Darren Sproles",
+      "position": "RB",
+      "yds": "4",
+      "att": "1",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "65b991ed-ad0c-41d8-bbe0-95fc147c9441",
+      "entry_id": "65b991ed-ad0c-41d8-bbe0-95fc147c94412014REG4ru",
+      "name": "Matt Asiata",
+      "position": "RB",
+      "yds": "78",
+      "att": "20",
+      "tds": "3",
+      "fum": "0"
+    },
+    {
+      "player_id": "9f026fc0-4449-4dc5-a226-2e2830619381",
+      "entry_id": "9f026fc0-4449-4dc5-a226-2e28306193812014REG4ru",
+      "name": "Derek Carr",
+      "position": "QB",
+      "yds": "9",
+      "att": "2",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "f77479d7-51a5-41f9-8924-69526dd078cd",
+      "entry_id": "f77479d7-51a5-41f9-8924-69526dd078cd2014REG4ru",
+      "name": "Jerick McKinnon",
+      "position": "RB",
+      "yds": "135",
+      "att": "18",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "6eba2319-7d5b-44da-bc48-280d3f9e423f",
+      "entry_id": "6eba2319-7d5b-44da-bc48-280d3f9e423f2014REG4ru",
+      "name": "Lorenzo Taliaferro",
+      "position": "RB",
+      "yds": "58",
+      "att": "15",
+      "tds": "1",
+      "fum": "0"
+    },
+    {
+      "player_id": "bb5957e6-ce7d-47ab-8036-22191ffc1c44",
+      "entry_id": "bb5957e6-ce7d-47ab-8036-22191ffc1c442014REG4ru",
+      "name": "Drew Brees",
+      "position": "QB",
+      "yds": "6",
+      "att": "1",
+      "tds": "0",
+      "fum": "0"
+    },
+    {
+      "player_id": "d4cb52a9-f6b4-42ed-b40b-27bff5f1eea7",
+      "entry_id": "d4cb52a9-f6b4-42ed-b40b-27bff5f1eea72014REG4ru",
+      "name": "Teddy Bridgewater",
+      "position": "QB",
+      "yds": "27",
+      "att": "5",
+      "tds": "1",
+      "fum": "0"
+    },
+    {
+      "player_id": "b4ce3e07-7848-4da2-a33e-4f04ce540ba5",
+      "entry_id": "b4ce3e07-7848-4da2-a33e-4f04ce540ba52014REG4ru",
+      "name": "Travaris Cadet",
+      "position": "RB",
+      "yds": "1",
+      "att": "1",
+      "tds": "0",
+      "fum": "0"
+    }
+  ],
+  "passing": [
+    {
+      "player_id": "34cc7f47-9f14-4661-b9af-c9d3b2fc873a",
+      "entry_id": "34cc7f47-9f14-4661-b9af-c9d3b2fc873a2014REG4pa",
+      "name": "Charlie Whitehurst",
+      "position": "QB",
+      "yds": "177",
+      "att": "23",
+      "tds": "1",
+      "cmp": "12",
+      "int": "1"
+    },
+    {
+      "player_id": "2fda010a-8c62-4c07-b601-4ba03f57e6af",
+      "entry_id": "2fda010a-8c62-4c07-b601-4ba03f57e6af2014REG4pa",
+      "name": "Alex Smith",
+      "position": "QB",
+      "yds": "248",
+      "att": "26",
+      "tds": "3",
+      "cmp": "20",
+      "int": "0"
+    },
+    {
+      "player_id": "e3181493-6a2a-4e95-aa6f-3fc1ddeb7512",
+      "entry_id": "e3181493-6a2a-4e95-aa6f-3fc1ddeb75122014REG4pa",
+      "name": "Andrew Luck",
+      "position": "QB",
+      "yds": "393",
+      "att": "41",
+      "tds": "4",
+      "cmp": "29",
+      "int": "1"
+    },
+    {
+      "player_id": "c8232b55-6617-4dd9-a7cf-cf14cd9a29ab",
+      "entry_id": "c8232b55-6617-4dd9-a7cf-cf14cd9a29ab2014REG4pa",
+      "name": "Nick Foles",
+      "position": "QB",
+      "yds": "195",
+      "att": "43",
+      "tds": "0",
+      "cmp": "21",
+      "int": "2"
+    },
+    {
+      "player_id": "9f026fc0-4449-4dc5-a226-2e2830619381",
+      "entry_id": "9f026fc0-4449-4dc5-a226-2e28306193812014REG4pa",
+      "name": "Derek Carr",
+      "position": "QB",
+      "yds": "146",
+      "att": "25",
+      "tds": "1",
+      "cmp": "16",
+      "int": "1"
+    },
+    {
+      "player_id": "bb5957e6-ce7d-47ab-8036-22191ffc1c44",
+      "entry_id": "bb5957e6-ce7d-47ab-8036-22191ffc1c442014REG4pa",
+      "name": "Drew Brees",
+      "position": "QB",
+      "yds": "340",
+      "att": "44",
+      "tds": "2",
+      "cmp": "32",
+      "int": "1"
+    },
+    {
+      "player_id": "d4cb52a9-f6b4-42ed-b40b-27bff5f1eea7",
+      "entry_id": "d4cb52a9-f6b4-42ed-b40b-27bff5f1eea72014REG4pa",
+      "name": "Teddy Bridgewater",
+      "position": "QB",
+      "yds": "317",
+      "att": "30",
+      "tds": "0",
+      "cmp": "19",
+      "int": "0"
+    },
+    {
+      "player_id": "7e655b10-5853-479c-a6de-927c4323d186",
+      "entry_id": "7e655b10-5853-479c-a6de-927c4323d1862014REG4pa",
+      "name": "Zach Mettenberger",
+      "position": "QB",
+      "yds": "17",
+      "att": "5",
+      "tds": "0",
+      "cmp": "2",
+      "int": "1"
+    },
+    {
+      "player_id": "01654256-1c2b-4729-a166-dd54358a71da",
+      "entry_id": "01654256-1c2b-4729-a166-dd54358a71da2014REG4pa",
+      "name": "Jimmy Clausen",
+      "position": "QB",
+      "yds": "9",
+      "att": "1",
+      "tds": "0",
+      "cmp": "1",
+      "int": "0"
+    },
+    {
+      "player_id": "16e33176-b73e-49b7-b0aa-c405b47a706e",
+      "entry_id": "16e33176-b73e-49b7-b0aa-c405b47a706e2014REG4pa",
+      "name": "Antonio Brown",
+      "position": "WR",
+      "yds": "17",
+      "att": "1",
+      "tds": "0",
+      "cmp": "1",
+      "int": "0"
+    },
+    {
+      "player_id": "ea357add-1a41-4a8b-8f34-bbfade7f4d98",
+      "entry_id": "ea357add-1a41-4a8b-8f34-bbfade7f4d982014REG4pa",
+      "name": "Ben Roethlisberger",
+      "position": "QB",
+      "yds": "314",
+      "att": "40",
+      "tds": "3",
+      "cmp": "29",
+      "int": "0"
+    },
+    {
+      "player_id": "e1235f1e-26ce-438c-8168-3b1ded4ab893",
+      "entry_id": "e1235f1e-26ce-438c-8168-3b1ded4ab8932014REG4pa",
+      "name": "Mike Glennon",
+      "position": "QB",
+      "yds": "302",
+      "att": "42",
+      "tds": "2",
+      "cmp": "21",
+      "int": "1"
+    },
+    {
+      "player_id": "e47706c7-e14d-41fb-b13b-83a835a1f3bc",
+      "entry_id": "e47706c7-e14d-41fb-b13b-83a835a1f3bc2014REG4pa",
+      "name": "Philip Rivers",
+      "position": "QB",
+      "yds": "377",
+      "att": "39",
+      "tds": "3",
+      "cmp": "29",
+      "int": "0"
+    },
+    {
+      "player_id": "bbd0942c-6f77-4f83-a6d0-66ec6548019e",
+      "entry_id": "bbd0942c-6f77-4f83-a6d0-66ec6548019e2014REG4pa",
+      "name": "Kirk Cousins",
+      "position": "QB",
+      "yds": "257",
+      "att": "33",
+      "tds": "1",
+      "cmp": "19",
+      "int": "4"
+    },
+    {
+      "player_id": "42de9d1d-0352-460b-9172-9452414fd7fd",
+      "entry_id": "42de9d1d-0352-460b-9172-9452414fd7fd2014REG4pa",
+      "name": "Jimmy Garoppolo",
+      "position": "QB",
+      "yds": "70",
+      "att": "7",
+      "tds": "1",
+      "cmp": "6",
+      "int": "0"
+    },
+    {
+      "player_id": "ade43b1a-0601-4672-83b6-d246bc066a19",
+      "entry_id": "ade43b1a-0601-4672-83b6-d246bc066a192014REG4pa",
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "yds": "293",
+      "att": "34",
+      "tds": "2",
+      "cmp": "24",
+      "int": "0"
+    },
+    {
+      "player_id": "64797df2-efd3-4b27-86ee-1d48f7edb09f",
+      "entry_id": "64797df2-efd3-4b27-86ee-1d48f7edb09f2014REG4pa",
+      "name": "Joe Flacco",
+      "position": "QB",
+      "yds": "327",
+      "att": "31",
+      "tds": "3",
+      "cmp": "22",
+      "int": "0"
+    },
+    {
+      "player_id": "0ce48193-e2fa-466e-a986-33f751add206",
+      "entry_id": "0ce48193-e2fa-466e-a986-33f751add2062014REG4pa",
+      "name": "Aaron Rodgers",
+      "position": "QB",
+      "yds": "302",
+      "att": "28",
+      "tds": "4",
+      "cmp": "22",
+      "int": "0"
+    },
+    {
+      "player_id": "663b69e5-1fc2-404b-9a3f-f153c650ee89",
+      "entry_id": "663b69e5-1fc2-404b-9a3f-f153c650ee892014REG4pa",
+      "name": "Matthew McGloin",
+      "position": "QB",
+      "yds": "129",
+      "att": "19",
+      "tds": "1",
+      "cmp": "12",
+      "int": "2"
+    },
+    {
+      "player_id": "ecd3bc0f-04dd-4945-9454-3fc4722fa5a8",
+      "entry_id": "ecd3bc0f-04dd-4945-9454-3fc4722fa5a82014REG4pa",
+      "name": "Jay Cutler",
+      "position": "QB",
+      "yds": "256",
+      "att": "34",
+      "tds": "2",
+      "cmp": "22",
+      "int": "2"
+    },
+    {
+      "player_id": "6723249c-5fb5-4b0a-9373-cb59cdc99ec8",
+      "entry_id": "6723249c-5fb5-4b0a-9373-cb59cdc99ec82014REG4pa",
+      "name": "Blake Bortles",
+      "position": "QB",
+      "yds": "253",
+      "att": "37",
+      "tds": "1",
+      "cmp": "29",
+      "int": "2"
+    },
+    {
+      "player_id": "5812204c-6dae-4450-8011-99e0f72864ac",
+      "entry_id": "5812204c-6dae-4450-8011-99e0f72864ac2014REG4pa",
+      "name": "Ryan Tannehill",
+      "position": "QB",
+      "yds": "278",
+      "att": "31",
+      "tds": "2",
+      "cmp": "23",
+      "int": "1"
+    },
+    {
+      "player_id": "068b70bc-9558-4e99-b729-754fd28937ed",
+      "entry_id": "068b70bc-9558-4e99-b729-754fd28937ed2014REG4pa",
+      "name": "Colin Kaepernick",
+      "position": "QB",
+      "yds": "218",
+      "att": "30",
+      "tds": "2",
+      "cmp": "17",
+      "int": "1"
+    },
+    {
+      "player_id": "0742d2ea-1cf2-49a6-a150-77ba6e034d8c",
+      "entry_id": "0742d2ea-1cf2-49a6-a150-77ba6e034d8c2014REG4pa",
+      "name": "Ryan Fitzpatrick",
+      "position": "QB",
+      "yds": "268",
+      "att": "37",
+      "tds": "1",
+      "cmp": "25",
+      "int": "2"
+    },
+    {
+      "player_id": "19d00799-4271-40ac-b5c4-4ea8b410a704",
+      "entry_id": "19d00799-4271-40ac-b5c4-4ea8b410a7042014REG4pa",
+      "name": "EJ Manuel",
+      "position": "QB",
+      "yds": "225",
+      "att": "44",
+      "tds": "2",
+      "cmp": "21",
+      "int": "2"
+    },
+    {
+      "player_id": "c32d8200-2b85-4638-8db3-9a52fb86b207",
+      "entry_id": "c32d8200-2b85-4638-8db3-9a52fb86b2072014REG4pa",
+      "name": "Tony Romo",
+      "position": "QB",
+      "yds": "262",
+      "att": "29",
+      "tds": "3",
+      "cmp": "22",
+      "int": "0"
+    }
+  ],
+  "receiving": [
+    {
+      "player_id": "bd413539-9351-454e-9d61-4e8635d7e9f5",
+      "entry_id": "bd413539-9351-454e-9d61-4e8635d7e9f52014REG4re",
+      "name": "Jack Doyle",
+      "position": "TE",
+      "yds": "7",
+      "tds": "0",
+      "rec": "1"
+    },
+    {
+      "player_id": "8f22eb36-5282-407a-b6f9-f9b62e5f7318",
+      "entry_id": "8f22eb36-5282-407a-b6f9-f9b62e5f73182014REG4re",
+      "name": "Ahmad Bradshaw",
+      "position": "RB",
+      "yds": "20",
+      "tds": "1",
+      "rec": "2"
+    },
+    {
+      "player_id": "1899df56-d4be-44cf-97be-6d3b484d45ac",
+      "entry_id": "1899df56-d4be-44cf-97be-6d3b484d45ac2014REG4re",
+      "name": "Nate Washington",
+      "position": "WR",
+      "yds": "20",
+      "tds": "0",
+      "rec": "1"
+    },
+    {
+      "player_id": "aca06a5e-0e3a-4285-a025-199f8fa0376f",
+      "entry_id": "aca06a5e-0e3a-4285-a025-199f8fa0376f2014REG4re",
+      "name": "Jamaal Charles",
+      "position": "RB",
+      "yds": "16",
+      "tds": "2",
+      "rec": "3"
+    },
+    {
+      "player_id": "c3859e06-5f23-4302-a71b-04820a899d5f",
+      "entry_id": "c3859e06-5f23-4302-a71b-04820a899d5f2014REG4re",
+      "name": "Travis Kelce",
+      "position": "TE",
+      "yds": "93",
+      "tds": "1",
+      "rec": "8"
+    },
+    {
+      "player_id": "58f2138a-0772-435d-8444-85b35e97172e",
+      "entry_id": "58f2138a-0772-435d-8444-85b35e97172e2014REG4re",
+      "name": "A.J. Jenkins",
+      "position": "WR",
+      "yds": "0",
+      "tds": "0",
+      "rec": "1"
+    },
+    {
+      "player_id": "24a6423a-0c3f-4cfb-b25a-fc05c04c9f7f",
+      "entry_id": "24a6423a-0c3f-4cfb-b25a-fc05c04c9f7f2014REG4re",
+      "name": "Brian Hartline",
+      "position": "WR",
+      "yds": "74",
+      "tds": "0",
+      "rec": "6"
+    },
+    {
+      "player_id": "969a4d68-1d76-4e64-bfff-e898a9ac6bd4",
+      "entry_id": "969a4d68-1d76-4e64-bfff-e898a9ac6bd42014REG4re",
+      "name": "Rishard Matthews",
+      "position": "WR",
+      "yds": "27",
+      "tds": "0",
+      "rec": "2"
+    },
+    {
+      "player_id": "020cf3d6-745a-4418-a3dc-7dda7a86d0bf",
+      "entry_id": "020cf3d6-745a-4418-a3dc-7dda7a86d0bf2014REG4re",
+      "name": "Trent Richardson",
+      "position": "RB",
+      "yds": "52",
+      "tds": "0",
+      "rec": "4"
+    },
+    {
+      "player_id": "b8426cea-f8b9-4061-8d56-e70d1230103e",
+      "entry_id": "b8426cea-f8b9-4061-8d56-e70d1230103e2014REG4re",
+      "name": "T.Y. Hilton",
+      "position": "WR",
+      "yds": "105",
+      "tds": "0",
+      "rec": "6"
+    },
+    {
+      "player_id": "23d7cd82-d526-4fd8-8f8a-97885f2bc926",
+      "entry_id": "23d7cd82-d526-4fd8-8f8a-97885f2bc9262014REG4re",
+      "name": "Hakeem Nicks",
+      "position": "WR",
+      "yds": "12",
+      "tds": "0",
+      "rec": "2"
+    },
+    {
+      "player_id": "cc745cc3-d52a-454b-98c8-ac9155a9405c",
+      "entry_id": "cc745cc3-d52a-454b-98c8-ac9155a9405c2014REG4re",
+      "name": "Dwayne Allen",
+      "position": "TE",
+      "yds": "38",
+      "tds": "1",
+      "rec": "3"
+    },
+    {
+      "player_id": "94fc7e6c-8c37-4713-abef-68154ac41d06",
+      "entry_id": "94fc7e6c-8c37-4713-abef-68154ac41d062014REG4re",
+      "name": "Reggie Wayne",
+      "position": "WR",
+      "yds": "119",
+      "tds": "1",
+      "rec": "7"
+    },
+    {
+      "player_id": "9102665d-a658-4264-81c3-b9810776ddf0",
+      "entry_id": "9102665d-a658-4264-81c3-b9810776ddf02014REG4re",
+      "name": "Coby Fleener",
+      "position": "TE",
+      "yds": "26",
+      "tds": "1",
+      "rec": "2"
+    },
+    {
+      "player_id": "a686927a-781f-4814-a4ef-a5ab34a09062",
+      "entry_id": "a686927a-781f-4814-a4ef-a5ab34a090622014REG4re",
+      "name": "Jordan Todman",
+      "position": "RB",
+      "yds": "20",
+      "tds": "0",
+      "rec": "2"
+    },
+    {
+      "player_id": "b45f0ca8-9f84-4893-86d7-b86bb6a588a7",
+      "entry_id": "b45f0ca8-9f84-4893-86d7-b86bb6a588a72014REG4re",
+      "name": "Denard Robinson",
+      "position": "WR",
+      "yds": "7",
+      "tds": "0",
+      "rec": "3"
+    },
+    {
+      "player_id": "06669e1d-f9f7-4774-abc2-6ed2f7e7647f",
+      "entry_id": "06669e1d-f9f7-4774-abc2-6ed2f7e7647f2014REG4re",
+      "name": "Toby Gerhart",
+      "position": "RB",
+      "yds": "8",
+      "tds": "0",
+      "rec": "1"
+    },
+    {
+      "player_id": "bd10efdf-d8e7-4e23-ab1a-1e42fb65131b",
+      "entry_id": "bd10efdf-d8e7-4e23-ab1a-1e42fb65131b2014REG4re",
+      "name": "Alfred Morris",
+      "position": "RB",
+      "yds": "27",
+      "tds": "0",
+      "rec": "3"
+    },
+    {
+      "player_id": "a39de973-a990-49a3-b90c-f1c0c99eca2e",
+      "entry_id": "a39de973-a990-49a3-b90c-f1c0c99eca2e2014REG4re",
+      "name": "Cecil Shorts",
+      "position": "WR",
+      "yds": "25",
+      "tds": "0",
+      "rec": "2"
+    },
+    {
+      "player_id": "d579af24-53b8-42bf-b767-c50944afb7ec",
+      "entry_id": "d579af24-53b8-42bf-b767-c50944afb7ec2014REG4re",
+      "name": "Clay Harbor",
+      "position": "TE",
+      "yds": "69",
+      "tds": "0",
+      "rec": "8"
+    },
+    {
+      "player_id": "470c7f4b-0839-4290-a8cd-ff185ae350f3",
+      "entry_id": "470c7f4b-0839-4290-a8cd-ff185ae350f32014REG4re",
+      "name": "Mike Brown",
+      "position": "WR",
+      "yds": "12",
+      "tds": "0",
+      "rec": "1"
+    },
+    {
+      "player_id": "5f512278-4956-476d-b5ca-73ecd58d79c1",
+      "entry_id": "5f512278-4956-476d-b5ca-73ecd58d79c12014REG4re",
+      "name": "Khiry Robinson",
+      "position": "RB",
+      "yds": "18",
+      "tds": "0",
+      "rec": "2"
+    },
+    {
+      "player_id": "e2782d05-3e61-4c4f-93a6-70eed054e5ba",
+      "entry_id": "e2782d05-3e61-4c4f-93a6-70eed054e5ba2014REG4re",
+      "name": "Pierre Thomas",
+      "position": "RB",
+      "yds": "15",
+      "tds": "0",
+      "rec": "2"
+    },
+    {
+      "player_id": "5f05de83-f15d-42f1-8271-284ca54f63de",
+      "entry_id": "5f05de83-f15d-42f1-8271-284ca54f63de2014REG4re",
+      "name": "Jeremy Maclin",
+      "position": "WR",
+      "yds": "68",
+      "tds": "0",
+      "rec": "5"
+    },
+    {
+      "player_id": "384dbb20-9765-4cfb-9384-8c062e14d47f",
+      "entry_id": "384dbb20-9765-4cfb-9384-8c062e14d47f2014REG4re",
+      "name": "Riley Cooper",
+      "position": "WR",
+      "yds": "54",
+      "tds": "0",
+      "rec": "6"
+    },
+    {
+      "player_id": "de3421f7-2147-4835-89a5-724e87bad463",
+      "entry_id": "de3421f7-2147-4835-89a5-724e87bad4632014REG4re",
+      "name": "Zach Ertz",
+      "position": "TE",
+      "yds": "43",
+      "tds": "0",
+      "rec": "4"
+    }
+  ],
+  "kicking": [
+    {
+      "player_id": "596c4000-ede5-45b0-8336-33efeb686d2b",
+      "entry_id": "596c4000-ede5-45b0-8336-33efeb686d2b2014REG4ki",
+      "name": "Caleb Sturgis",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "1",
+      "extra_pt_made": "5",
+      "extra_pt_att": "5"
+    },
+    {
+      "player_id": "9ecf8040-10f9-4a5c-92da-1b4d77bd6760",
+      "entry_id": "9ecf8040-10f9-4a5c-92da-1b4d77bd67602014REG4ki",
+      "name": "Adam Vinatieri",
+      "position": "K",
+      "fld_goals_made": "2",
+      "fld_goals_att": "2",
+      "extra_pt_made": "5",
+      "extra_pt_att": "5"
+    },
+    {
+      "player_id": "ed29fd68-0d5d-4636-8010-31436a78c9c6",
+      "entry_id": "ed29fd68-0d5d-4636-8010-31436a78c9c62014REG4ki",
+      "name": "Josh Scobee",
+      "position": "K",
+      "fld_goals_made": "0",
+      "fld_goals_att": "0",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    },
+    {
+      "player_id": "afac3e25-d72d-43f7-be4b-d33ed91a0bf8",
+      "entry_id": "afac3e25-d72d-43f7-be4b-d33ed91a0bf82014REG4ki",
+      "name": "Blair Walsh",
+      "position": "K",
+      "fld_goals_made": "4",
+      "fld_goals_att": "5",
+      "extra_pt_made": "3",
+      "extra_pt_att": "3"
+    },
+    {
+      "player_id": "d1a06132-76d1-4654-af3e-633c5f07a4b4",
+      "entry_id": "d1a06132-76d1-4654-af3e-633c5f07a4b42014REG4ki",
+      "name": "Shaun Suisham",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "2",
+      "extra_pt_made": "3",
+      "extra_pt_att": "3"
+    },
+    {
+      "player_id": "47cfc2a1-2b81-430e-8b30-ff5129e5c601",
+      "entry_id": "47cfc2a1-2b81-430e-8b30-ff5129e5c6012014REG4ki",
+      "name": "Nick Novak",
+      "position": "K",
+      "fld_goals_made": "4",
+      "fld_goals_att": "4",
+      "extra_pt_made": "3",
+      "extra_pt_att": "3"
+    },
+    {
+      "player_id": "5514afb6-bd43-49a8-9bf7-b8baaaecdabe",
+      "entry_id": "5514afb6-bd43-49a8-9bf7-b8baaaecdabe2014REG4ki",
+      "name": "Kai Forbath",
+      "position": "K",
+      "fld_goals_made": "0",
+      "fld_goals_att": "0",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    },
+    {
+      "player_id": "d184bc5e-7221-463e-a5b4-08967489685c",
+      "entry_id": "d184bc5e-7221-463e-a5b4-08967489685c2014REG4ki",
+      "name": "Alex Henery",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "2",
+      "extra_pt_made": "3",
+      "extra_pt_att": "3"
+    },
+    {
+      "player_id": "a527b7db-0b52-4379-9e4c-2e08c1fe1bed",
+      "entry_id": "a527b7db-0b52-4379-9e4c-2e08c1fe1bed2014REG4ki",
+      "name": "Stephen Gostkowski",
+      "position": "K",
+      "fld_goals_made": "0",
+      "fld_goals_att": "0",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    },
+    {
+      "player_id": "7481e90a-ffbb-49b8-a55e-a68335d1bbc9",
+      "entry_id": "7481e90a-ffbb-49b8-a55e-a68335d1bbc92014REG4ki",
+      "name": "Patrick Murray",
+      "position": "K",
+      "fld_goals_made": "2",
+      "fld_goals_att": "2",
+      "extra_pt_made": "3",
+      "extra_pt_att": "3"
+    },
+    {
+      "player_id": "d96ff17c-841a-4768-8e08-3a4cfcb7f717",
+      "entry_id": "d96ff17c-841a-4768-8e08-3a4cfcb7f7172014REG4ki",
+      "name": "Cairo Santos",
+      "position": "K",
+      "fld_goals_made": "2",
+      "fld_goals_att": "2",
+      "extra_pt_made": "5",
+      "extra_pt_att": "5"
+    },
+    {
+      "player_id": "20a0bad2-d530-4ff4-a2df-5c0a21a1f5db",
+      "entry_id": "20a0bad2-d530-4ff4-a2df-5c0a21a1f5db2014REG4ki",
+      "name": "Justin Tucker",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "2",
+      "extra_pt_made": "5",
+      "extra_pt_att": "5"
+    },
+    {
+      "player_id": "e0856548-6fd5-4f83-9aa0-91f1bf4cbbd8",
+      "entry_id": "e0856548-6fd5-4f83-9aa0-91f1bf4cbbd82014REG4ki",
+      "name": "Mason Crosby",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "2",
+      "extra_pt_made": "5",
+      "extra_pt_att": "5"
+    },
+    {
+      "player_id": "480277d1-47c9-44df-969e-038a84cd0fea",
+      "entry_id": "480277d1-47c9-44df-969e-038a84cd0fea2014REG4ki",
+      "name": "Sebastian Janikowski",
+      "position": "K",
+      "fld_goals_made": "0",
+      "fld_goals_att": "0",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    },
+    {
+      "player_id": "abd73d50-ce60-47f1-b37f-2f9a05b0d7b9",
+      "entry_id": "abd73d50-ce60-47f1-b37f-2f9a05b0d7b92014REG4ki",
+      "name": "Robbie Gould",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "1",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    },
+    {
+      "player_id": "e5247e5f-c4af-4a9b-8c7c-da75ef7fbf8d",
+      "entry_id": "e5247e5f-c4af-4a9b-8c7c-da75ef7fbf8d2014REG4ki",
+      "name": "Phil Dawson",
+      "position": "K",
+      "fld_goals_made": "4",
+      "fld_goals_att": "4",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    },
+    {
+      "player_id": "d944ce13-2c90-4655-890c-5dac028a130c",
+      "entry_id": "d944ce13-2c90-4655-890c-5dac028a130c2014REG4ki",
+      "name": "Dan Carpenter",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "1",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    },
+    {
+      "player_id": "c7d8781f-b9f6-4e0f-b0b6-29fce3985f3e",
+      "entry_id": "c7d8781f-b9f6-4e0f-b0b6-29fce3985f3e2014REG4ki",
+      "name": "Randy Bullock",
+      "position": "K",
+      "fld_goals_made": "3",
+      "fld_goals_att": "3",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    },
+    {
+      "player_id": "beb64618-614c-49f7-a3aa-c0c75b7839ea",
+      "entry_id": "beb64618-614c-49f7-a3aa-c0c75b7839ea2014REG4ki",
+      "name": "Dan Bailey",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "1",
+      "extra_pt_made": "5",
+      "extra_pt_att": "5"
+    },
+    {
+      "player_id": "63f8a401-f308-4463-9d0b-4335b98da682",
+      "entry_id": "63f8a401-f308-4463-9d0b-4335b98da6822014REG4ki",
+      "name": "Graham Gano",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "1",
+      "extra_pt_made": "1",
+      "extra_pt_att": "1"
+    },
+    {
+      "player_id": "f5e1f35d-9f17-4890-964c-396e76ae0d31",
+      "entry_id": "f5e1f35d-9f17-4890-964c-396e76ae0d312014REG4ki",
+      "name": "Josh Brown",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "1",
+      "extra_pt_made": "6",
+      "extra_pt_att": "6"
+    },
+    {
+      "player_id": "218d1644-603e-4da3-9ce1-48ce3927494f",
+      "entry_id": "218d1644-603e-4da3-9ce1-48ce3927494f2014REG4ki",
+      "name": "Matt Bryant",
+      "position": "K",
+      "fld_goals_made": "0",
+      "fld_goals_att": "0",
+      "extra_pt_made": "4",
+      "extra_pt_att": "4"
+    },
+    {
+      "player_id": "b37c621e-1125-4c35-bea0-fcabb1527060",
+      "entry_id": "b37c621e-1125-4c35-bea0-fcabb15270602014REG4ki",
+      "name": "Nick Folk",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "1",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    },
+    {
+      "player_id": "4b99ead5-0f79-4899-84a7-075c08890698",
+      "entry_id": "4b99ead5-0f79-4899-84a7-075c088906982014REG4ki",
+      "name": "Cody Parkey",
+      "position": "K",
+      "fld_goals_made": "0",
+      "fld_goals_att": "0",
+      "extra_pt_made": "3",
+      "extra_pt_att": "3"
+    },
+    {
+      "player_id": "ecc4f0c1-64e0-46cc-9b58-91c2b215e62a",
+      "entry_id": "ecc4f0c1-64e0-46cc-9b58-91c2b215e62a2014REG4ki",
+      "name": "Ryan Succop",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "1",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    },
+    {
+      "player_id": "21324436-47e6-4e7e-9f57-6e343cf5aa07",
+      "entry_id": "21324436-47e6-4e7e-9f57-6e343cf5aa072014REG4ki",
+      "name": "Shayne Graham",
+      "position": "K",
+      "fld_goals_made": "1",
+      "fld_goals_att": "2",
+      "extra_pt_made": "2",
+      "extra_pt_att": "2"
+    }
+  ]
+}

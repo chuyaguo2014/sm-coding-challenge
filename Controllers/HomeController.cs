@@ -46,7 +46,9 @@ namespace sm_coding_challenge.Controllers
         [HttpGet]
         public IActionResult LatestPlayers(string ids)
         {
-            throw new NotImplementedException("Method Needs to be Implemented");
+            //throw new NotImplementedException("Method Needs to be Implemented");
+            var result = _dataProvider.GetLatestPlayers(ids);
+            return Json(result);
         }
 
         public IActionResult Error()

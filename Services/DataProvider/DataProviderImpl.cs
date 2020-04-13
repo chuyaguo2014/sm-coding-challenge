@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 using sm_coding_challenge.Models;
 using System.Collections.Generic;
 using System.Linq;
-
+using System.IO;
 
 namespace sm_coding_challenge.Services.DataProvider
 {
@@ -21,8 +21,9 @@ namespace sm_coding_challenge.Services.DataProvider
         /// <returns></returns>
         public async Task<List<PlayerModel>> GetPlayersByIds(string ids)
         {
-            if (!String.IsNullOrEmpty(ids))
+            if (!string.IsNullOrEmpty(ids))
             {
+
                 var handler = new HttpClientHandler()
                 {
                     AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
@@ -42,6 +43,30 @@ namespace sm_coding_challenge.Services.DataProvider
 
         }
 
+        public List<PlayerModel> GetLatestPlayers(string ids)
+        {
+            var idList = ids.Split(',');
+            string path = Directory.GetCurrentDirectory();
+            var historicalDataDirectory = new DirectoryInfo(path + "/Services/DataProvider/historicalData");
+
+            var latestFile = (from f in historicalDataDirectory.GetFiles()
+                              orderby f.LastWriteTime descending
+                              select f).First();
+            Console.WriteLine("okkk so what's my latest file? {0}", latestFile);
+
+            using (StreamReader reader = new StreamReader(latestFile.ToString()))
+            {
+                string content = reader.ReadToEnd();
+                var dataResponse = JsonConvert.DeserializeObject<DataResponseModel>(content, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
+
+                var rushingDictionary = generateDictionary(dataResponse.Rushing);
+                var passingDictionary = generateDictionary(dataResponse.Passing);
+                var receivingDictionary = generateDictionary(dataResponse.Receiving);
+                var kickingingDictionary = generateDictionary(dataResponse.Kicking);
+                return getPlayersFromResponse(idList, dataResponse);
+            }
+        }
+
         /// <summary>
         /// Search dataResponse (containing all the players) for those with the given ids
         /// </summary>
@@ -50,20 +75,8 @@ namespace sm_coding_challenge.Services.DataProvider
         /// <returns></returns>
         private List<PlayerModel> getPlayersFromResponse(String[] idArray, DataResponseModel dataResponse)
         {
-            var distinctIdArray = idArray.Distinct().ToArray();
             Dictionary<String, PlayerModel> playerDictionary = getAllPlayersDictionary(dataResponse);
-
-            var returnList = new List<PlayerModel>();
-
-            foreach (string playerId in distinctIdArray)
-            {
-                PlayerModel foundPlayer;
-                if (playerDictionary.TryGetValue(playerId, out foundPlayer))
-                {
-                    returnList.Add(foundPlayer);
-                }
-            }
-            return returnList;
+            return lookUpPlayersInDictionary(idArray, playerDictionary);
         }
 
         /// <summary>
@@ -80,8 +93,28 @@ namespace sm_coding_challenge.Services.DataProvider
             allPlayers.AddRange(dataResponse.Receiving);
             allPlayers.AddRange(dataResponse.Kicking);
 
-            Dictionary<String, PlayerModel> playerDictionary = allPlayers.GroupBy(p => p.Id, StringComparer.OrdinalIgnoreCase).ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
-            return playerDictionary;
+            return generateDictionary(allPlayers);
+        }
+
+        private Dictionary<String, PlayerModel> generateDictionary(List<PlayerModel> playerList)
+        {
+            return playerList.GroupBy(p => p.Id, StringComparer.OrdinalIgnoreCase).ToDictionary(g => g.Key, g => g.First(), StringComparer.OrdinalIgnoreCase);
+        }
+
+        private List<PlayerModel> lookUpPlayersInDictionary(String[] idArray, Dictionary<String, PlayerModel> playerDictionary)
+        {
+            var distinctIdArray = idArray.Distinct().ToArray();
+            var returnList = new List<PlayerModel>();
+
+            foreach (string playerId in distinctIdArray)
+            {
+                PlayerModel foundPlayer;
+                if (playerDictionary.TryGetValue(playerId, out foundPlayer))
+                {
+                    returnList.Add(foundPlayer);
+                }
+            }
+            return returnList;
         }
     }
 }

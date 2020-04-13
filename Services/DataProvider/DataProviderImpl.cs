@@ -43,7 +43,7 @@ namespace sm_coding_challenge.Services.DataProvider
 
         }
 
-        public List<PlayerModel> GetLatestPlayers(string ids)
+        public Dictionary<String, List<PlayerModel>> GetLatestPlayers(string ids)
         {
             var idList = ids.Split(',');
             string path = Directory.GetCurrentDirectory();
@@ -52,7 +52,6 @@ namespace sm_coding_challenge.Services.DataProvider
             var latestFile = (from f in historicalDataDirectory.GetFiles()
                               orderby f.LastWriteTime descending
                               select f).First();
-            Console.WriteLine("okkk so what's my latest file? {0}", latestFile);
 
             using (StreamReader reader = new StreamReader(latestFile.ToString()))
             {
@@ -60,10 +59,38 @@ namespace sm_coding_challenge.Services.DataProvider
                 var dataResponse = JsonConvert.DeserializeObject<DataResponseModel>(content, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto });
 
                 var rushingDictionary = generateDictionary(dataResponse.Rushing);
+                var rushingPlayers = lookUpPlayersInDictionary(idList, rushingDictionary);
+
                 var passingDictionary = generateDictionary(dataResponse.Passing);
+                var passingPlayers = lookUpPlayersInDictionary(idList, passingDictionary);
+
                 var receivingDictionary = generateDictionary(dataResponse.Receiving);
+                var receivingPlayers = lookUpPlayersInDictionary(idList, receivingDictionary);
+
                 var kickingingDictionary = generateDictionary(dataResponse.Kicking);
-                return getPlayersFromResponse(idList, dataResponse);
+                var kickingPlayers = lookUpPlayersInDictionary(idList, kickingingDictionary);
+
+                var returnDictionary = new Dictionary<String, List<PlayerModel>>();
+                if (rushingPlayers.Count > 0)
+                {
+                    returnDictionary.Add("rushing", rushingPlayers);
+                }
+
+                if (passingPlayers.Count > 0)
+                {
+                    returnDictionary.Add("passing", passingPlayers);
+                }
+
+                if (receivingPlayers.Count > 0)
+                {
+                    returnDictionary.Add("receiving", receivingPlayers);
+                }
+
+                if (kickingPlayers.Count > 0)
+                {
+                    returnDictionary.Add("kicking", kickingPlayers);
+                }
+                return returnDictionary;
             }
         }
 

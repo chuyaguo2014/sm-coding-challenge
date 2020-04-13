@@ -7,6 +7,6 @@ namespace sm_coding_challenge.Services.DataProvider
     public interface IDataProvider
     {
         Task<List<PlayerModel>> GetPlayersByIds(string ids);
-        public List<PlayerModel> GetLatestPlayers(string ids);
+        public Dictionary<string, List<PlayerModel>> GetLatestPlayers(string ids);
     }
 }

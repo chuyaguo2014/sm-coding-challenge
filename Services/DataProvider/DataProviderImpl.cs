@@ -47,8 +47,19 @@ namespace sm_coding_challenge.Services.DataProvider
         {
             var idList = ids.Split(',');
             string path = Directory.GetCurrentDirectory();
+            // Assuming each time we fetch data from the source, we store it in the historicalData folder and don't modify its content again
+            // all subsequent actions done to the document would be read-only.
+            // I did this so anyone can pull down this repo, run the api locally and verify the result
+            // but in real life, it would be better to:
+            // 1. fetch and store the json in aws s3
+            // 2. store the metadata of fetched info in a db (with fetch timestamp and s3 url)
+            // 3. query the db to get the s3 url of the latest file and then read from there
+
+            // Note that I also did not handle the case where the historicalData folder is empty
+            // in real life, if fetching doesn't take too long, we could do a one-time api-call to fetch and store the data before proceeding forward
             var historicalDataDirectory = new DirectoryInfo(path + "/Services/DataProvider/historicalData");
 
+            // the most recent file we wrote to is the latest file
             var latestFile = (from f in historicalDataDirectory.GetFiles()
                               orderby f.LastWriteTime descending
                               select f).First();
